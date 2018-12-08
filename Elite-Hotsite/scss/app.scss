@@ -161,8 +161,21 @@ h6,
     }
 }
 
+.voce-elite-section {
+
+    background-image: url(../img/samurai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
 .exclusividade-section {
-    background-color: $primary-color;
+
+    background-image: url(../img/shuriken.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fff;
 }
 
@@ -177,18 +190,7 @@ h6,
 
 }
 
-.seven-summit-section {
-    background-image: url(../img/seven-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
 
-
-    .primary-button {
-        margin-right: 25px;
-    }
-}
 
 .imersao-section {
     background-image: url(../img/imersao-bg.jpg);
@@ -201,4 +203,24 @@ h6,
     .primary-button {
         margin-right: 25px;
     }
+}
+
+.seven-summit-section {
+    background-image: url(../img/seven-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+
+
+    .primary-button {
+        margin-right: 25px;
+    }
+}
+.faq-section {
+    background-image: url(../img/katana_faq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
 }
