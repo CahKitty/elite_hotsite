@@ -183,18 +183,125 @@ h6,
     .vantagens{
         width: 300px;
         height: 600px;
-        background-color: #000;
     }
 
     .chat_vip{
         width:300px;
-        height: 100px;
-        background-color:green;
+        background-color: #000;
         display: flex;
-        justify-content: center
-        align-items space-around;
+        justify-content: center;
+        align-items: space-around;
+        color:$accent-color;
+        margin-bottom: 10px;
+        border-radius: 4px;
+
+       
+        p{
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+        img{
+            padding:20px;
+        }
+    }
+    
+    .chat_vip{
+        width:300px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+        color:$accent-color;
+        margin-bottom: 10px;
+       
+        p{
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+        img{
+            padding:20px;
+        }
+    }
+
+    .evento{
+        width:300px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+        color:$accent-color;
+        margin-bottom: 10px;
+       
+        p{
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+        img{
+            padding:20px;
+        }
+    }
+
+    .cursos{
+        width:300px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+        color:$accent-color;
+        margin-bottom: 10px;
+       
+        p{
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+        img{
+            padding:20px;
+        }
+    }
+
+    .palestra{
+        width:300px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+        color:$accent-color;
+        margin-bottom: 10px;
+       
+        p{
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+        img{
+            padding:20px;
+        }
+    }
+
+    .vitrine{
+        width:300px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+        color:$accent-color;
+        margin-bottom: 10px;
+       
+        p{
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+        img{
+            padding:20px;
+        }
     }
 }
+
 
 
 .section-title {
