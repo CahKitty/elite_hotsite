@@ -1,6 +1,6 @@
 @charset 'utf-8';
 @import 'settings';
-@import 'fullpage';
+// @import 'fullpage';
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 $primary-font: 'Lato',
 sans-serif;
@@ -349,13 +349,46 @@ h6,
         margin-right: 25px;
     }
 }
+
 .faq-section {
     background-image: url(../img/blossom.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
+
     
+    
+}
+
+footer{
+    height: 100vh;
+    height: 300px;
+    background-color: #000;
+
+    .logo-eduzz{
+        padding: 30px;
+        background-color: #E5C688;
+    }
+
+    p{
+        color: #cecece;}
+
+    .links-eduzz{
+        background-color: rgb(229, 136, 221);
+    }
+
+    .links-blog{
+        background-color: greenyellow;
+    }
+
+    .redes-sociais{
+        background-color: rgb(61, 47, 255);
+    }
+
+    .copy{
+        background-color: peru;
+    }
 }
 
 
