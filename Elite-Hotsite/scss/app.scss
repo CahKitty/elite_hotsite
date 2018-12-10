@@ -178,7 +178,18 @@ h6,
     background-position: center;
     color: #fff;
     
+    .content-vantagens, .content-texto{
+        display: flex;
+    }
 
+    .content-vantagens{
+        justify-content: flex-end;
+    }
+
+    .content-texto{
+        flex-direction: column;
+        justify-content: center;
+    }
     .vantagens{
         width: 300px;
         
@@ -347,8 +358,4 @@ h6,
     
 }
 
-footer{
-    width: 100%;
-    height: 300px;
-    background-color: #000;
-}
+
