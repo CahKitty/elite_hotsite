@@ -167,7 +167,7 @@ h6,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #fff;
+    color: #000000;
 }
 
 .exclusividade-section {
@@ -177,7 +177,25 @@ h6,
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
+    display: flex;
+    justify-content: center;
+
+    .vantagens{
+        width: 300px;
+        height: 600px;
+        background-color: #000;
+    }
+
+    .chat_vip{
+        width:300px;
+        height: 100px;
+        background-color:green;
+        display: flex;
+        justify-content: center
+        align-items space-around;
+    }
 }
+
 
 .section-title {
     font-size: rem-calc(48);
@@ -190,7 +208,9 @@ h6,
 
 }
 
-
+.programa-section{
+    background-image: url(../img/katana_faq.jpg);
+}
 
 .imersao-section {
     background-image: url(../img/imersao-bg.jpg);
@@ -198,11 +218,6 @@ h6,
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
-
-
-    .primary-button {
-        margin-right: 25px;
-    }
 }
 
 .seven-summit-section {
