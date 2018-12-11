@@ -82,7 +82,7 @@ h6,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #fff;
+    color: $light-gray;
 }
 
 .content {
@@ -123,7 +123,7 @@ h6,
     a {
         position: relative;
         padding: 12px 25px 12px 25px;
-        color: #fff;
+        color: $light-gray;
         transition: all 0.3s ease-in-out;
 
         span {
@@ -156,7 +156,7 @@ h6,
             display: block;
             margin: auto;
             transition: all 0.3s ease-in-out;
-            background-color: #fff;
+            background-color: $light-gray;
         }
     }
 }
@@ -167,7 +167,7 @@ h6,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #000000;
+    color:$primary-color;
 }
 
 .exclusividade-section {
@@ -176,7 +176,7 @@ h6,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #fff;
+    color:$light-gray;
     
     .content-vantagens, .content-texto{
         display: flex;
@@ -197,7 +197,7 @@ h6,
 
     .chat_vip{
         width:300px;
-        background-color: #000;
+        background-color:$primary-color;
         display: flex;
         justify-content: center;
         align-items: space-around;
@@ -218,7 +218,7 @@ h6,
     
     .chat_vip{
         width:300px;
-        background-color: #000;
+        background-color: $primary-color;
         display: flex;
         justify-content: center;
         align-items: space-around;
@@ -237,7 +237,7 @@ h6,
 
     .evento{
         width:300px;
-        background-color: #000;
+        background-color: $primary-color;
         display: flex;
         justify-content: center;
         align-items: space-around;
@@ -256,7 +256,7 @@ h6,
 
     .cursos{
         width:300px;
-        background-color: #000;
+        background-color:$primary-color;
         display: flex;
         justify-content: center;
         align-items: space-around;
@@ -275,7 +275,7 @@ h6,
 
     .palestra{
         width:300px;
-        background-color: #000;
+        background-color: $primary-color;
         display: flex;
         justify-content: center;
         align-items: space-around;
@@ -294,7 +294,7 @@ h6,
 
     .vitrine{
         width:300px;
-        background-color: #000;
+        background-color: $primary-color;
         display: flex;
         justify-content: center;
         align-items: space-around;
@@ -334,7 +334,7 @@ h6,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #fff;
+    color: $light-gray;
 }
 
 .seven-summit-section {
@@ -342,7 +342,7 @@ h6,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #fff;
+    color: $light-gray;
 
 
     .primary-button {
@@ -355,40 +355,81 @@ h6,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #fff;
+    color: $light-gray;
+}
 
-    
-    
+form{
+    background-color: #E5C688;
+    border-radius: 4px;
 }
 
 footer{
     height: 100vh;
-    height: 300px;
-    background-color: #000;
+    background-color: $primary-color;
+   
 
     .logo-eduzz{
         padding: 30px;
-        background-color: #E5C688;
+        // background-color: #E5C688;
     }
 
-    p{
-        color: #cecece;}
+    p{  
+        padding: 10px;
+        color: $light-gray;}
 
     .links-eduzz{
-        background-color: rgb(229, 136, 221);
+        padding: 30px;
+        color: $light-gray;
+        // background-color: rgb(229, 136, 221);
+
+
+        ul{
+            list-style-type:none;
+        }
+
+        li{
+            margin-left: -17px;
+        }
     }
 
     .links-blog{
-        background-color: greenyellow;
+        color: $light-gray;
+        padding: 30px;
+        // background-color: greenyellow;
+        
+        ul{
+            list-style-type:none;
+        }
+
+        li{
+            margin-left: -17px;
+        }
+
     }
 
     .redes-sociais{
-        background-color: rgb(61, 47, 255);
+        padding-top: 30px;
+        // background-color: rgb(61, 47, 255);
+
+        img{
+            margin-right: 8px;
+        }
+        
     }
 
     .copy{
-        background-color: peru;
+        margin: 0 auto;
+        padding: 5px;
+        font-size: 8px;
+        // background-color: peru;
+    }
+    
+    .accordion-item{
+        background-color: #E5C688;
+        margin-bottom: 20px;
     }
 }
+
+
 
 
