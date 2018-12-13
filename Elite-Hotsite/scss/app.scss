@@ -191,22 +191,20 @@ h6,
         justify-content: center;
     }
     .vantagens{
-        width: 300px;
-        
+        // width: 300px;
     }
 
     .chat_vip{
-        width:300px;
         background-color:$primary-color;
         display: flex;
         justify-content: center;
-        align-items: space-around;
+        align-items: center;
         color:$accent-color;
         margin-bottom: 10px;
         border-radius: 4px;
 
        
-        p{
+        p{  width: 300px;
             padding-left:0;
             padding-top: 20px;
             padding-right:20px;
@@ -217,15 +215,15 @@ h6,
     }
     
     .chat_vip{
-        width:300px;
         background-color: $primary-color;
         display: flex;
         justify-content: center;
-        align-items: space-around;
+        align-items: center;
         color:$accent-color;
         margin-bottom: 10px;
        
         p{
+            width: 300px;
             padding-left:0;
             padding-top: 20px;
             padding-right:20px;
@@ -236,15 +234,15 @@ h6,
     }
 
     .evento{
-        width:300px;
         background-color: $primary-color;
         display: flex;
         justify-content: center;
-        align-items: space-around;
+        align-items: center;
         color:$accent-color;
         margin-bottom: 10px;
        
         p{
+            width:300px;
             padding-left:0;
             padding-top: 20px;
             padding-right:20px;
@@ -255,15 +253,15 @@ h6,
     }
 
     .cursos{
-        width:300px;
         background-color:$primary-color;
         display: flex;
         justify-content: center;
-        align-items: space-around;
+        align-items: center;
         color:$accent-color;
         margin-bottom: 10px;
        
         p{
+            width: 300px;
             padding-left:0;
             padding-top: 20px;
             padding-right:20px;
@@ -274,15 +272,15 @@ h6,
     }
 
     .palestra{
-        width:300px;
         background-color: $primary-color;
         display: flex;
         justify-content: center;
-        align-items: space-around;
+        align-items: center;
         color:$accent-color;
         margin-bottom: 10px;
        
         p{
+            width: 300px;
             padding-left:0;
             padding-top: 20px;
             padding-right:20px;
@@ -293,15 +291,15 @@ h6,
     }
 
     .vitrine{
-        width:300px;
         background-color: $primary-color;
         display: flex;
         justify-content: center;
-        align-items: space-around;
+        align-items: center;
         color:$accent-color;
         margin-bottom: 10px;
        
         p{
+            width:300px;
             padding-left:0;
             padding-top: 20px;
             padding-right:20px;
@@ -343,74 +341,117 @@ h6,
     background-position: center;
     color: $light-gray;
 
-    .video{
-        background-color: $accent-color;
-    }
-}
+    .vantagens-imersao{
 
-.vantagens-imersao{
-    margin-top:100px;
-    display: flex;
-    align-items: space-around;
-
-    .coluna1, .coluna2, .coluna3{
-        background-color: #000;
-        margin-right: 20px;
-    }
-
-    .coluna1{
-        margin-right: 20px;
-        
-
-        .prefeitura{
-            justify-content: center;
-            background-color:$primary-color;
-            border-radius: 4px;
-        }
-    
-        .castelo{
-            background-color: #000;
-            justify-content: center;
-            background-color:$primary-color;
-            border-radius: 4px;
-        }
-        
-    }
-        
-    .coluna2{
-        margin-right: 20px;
-
-        .full-sail{
-            justify-content: center;
-            background-color:$primary-color;
-            border-radius: 4px;
-        }
-    
-        .nasa{
-
-            background-color: #000;
-            justify-content: center;
-            background-color:$primary-color;
-            border-radius: 4px;
-        }
-    }
-
-    .coluna3{
         .viagem{
+            display: flex;
             justify-content: center;
-            background-color:$primary-color;
-            border-radius: 4px;
+            align-items: center;
+            margin-bottom: 10px;
+
+            img{
+                padding:20px;
+            }
+
+            p{
+                width: 300px;
+                padding-left:0;
+                padding-top: 20px;
+                padding-right:20px;
+            }
         }
-    
-        .diploma{
-            background-color: #000;
+        .curso_disney{
+            display: flex;
             justify-content: center;
-            background-color:$primary-color;
-            border-radius: 4px;
-        }
-    }
+            align-items: center;
+            margin-bottom: 10px;
     
+            img{
+                padding:20px;
+            }
+    
+            p{  width: 300px;
+                padding-left:0;
+                padding-top: 20px;
+                padding-right:20px;
+                }
+            }
+        }
+        .prefeitura{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+    
+            img{
+                padding:20px;
+            }
+    
+            p{  
+                width: 300px;
+                padding-left:0;
+                padding-top: 20px;
+                padding-right:20px;
+            }
+        }
+        .castelo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+    
+            img{
+                padding:20px;
+            }
+    
+            p{
+                width: 300px;
+                padding-left:0;
+                padding-top: 20px;
+                padding-right:20px;
+                
+            }
+        }
+        .full-sail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+    
+            img{
+                padding:20px;
+            }
+    
+            p{
+                width: 300px;
+                padding-left:0;
+                padding-top: 20px;
+                padding-right:20px;
+                
+            }
+        }
+        .nasa{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+    
+            img{
+                padding:20px;
+            }
+    
+            p{
+                width: 300px;
+                padding-left:0;
+                padding-top: 20px;
+                padding-right:20px;
+                
+            }
+      } 
 }
+
+
+
 
 .seven-summit-section {
     background-image: url(../img/seven-bg.jpg);
