@@ -190,9 +190,6 @@ h6,
         flex-direction: column;
         justify-content: center;
     }
-    .vantagens{
-        // width: 300px;
-    }
 
     .chat_vip{
         background-color:$primary-color;
@@ -310,8 +307,6 @@ h6,
     }
 }
 
-
-
 .section-title {
     font-size: rem-calc(48);
 }
@@ -328,126 +323,262 @@ h6,
 }
 
 .niveis-section{
+
+    .niveis-texto, .niveis-frase{
+        display: flex;
+    }
+    
+    .niveis-texto{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .niveis-frases{
+        justify-content: flex-end;
+    }
+    
     h3{
         color: $accent-color;
-        padding-bottom: 100px;
+        font-style: italic;
     }
+
+}
+
+.niveis-afiliados-section{
+    
+}
+
+.conquistas-afiliados{
+    
+    .lv-10{
+        background-color:transparentize($primary-color, 0.16);
+        border-radius:4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$accent-color;
+        margin-bottom: 10px;
+
+        p{
+            width:300px;
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+        img{
+            padding:20px;
+        }
+    }
+    .lv-50{
+        background-color:transparentize($primary-color, 0.16);
+        border-radius:4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$accent-color;
+        margin-bottom: 10px;
+
+        p{
+            width:300px;
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+        img{
+            padding:20px;
+        }
+    }
+    .lv-100{
+        background-color:transparentize($primary-color, 0.16);
+        border-radius:4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$accent-color;
+        margin-bottom: 10px;
+
+        p{
+            width:300px;
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+        img{
+            padding:20px;
+        }
+    }
+    .lv-500{
+        background-color:transparentize($primary-color, 0.16);
+        border-radius:4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$accent-color;
+        margin-bottom: 10px;
+        border-radius:4px;
+
+        p{
+            width:300px;
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+        img{
+            padding:20px;
+        }
+    }
+
+}
+
+
+
+
+
+.imersao-section, .vantagens.imersao{
+    display: flex;
 }
 
 .imersao-section {
+
     background-image: url(../img/imersao-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: $light-gray;
-
-    .vantagens-imersao{
-
-        .viagem{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-
-            img{
-                padding:20px;
-            }
-
-            p{
-                width: 300px;
-                padding-left:0;
-                padding-top: 20px;
-                padding-right:20px;
-            }
+    color:$light-gray;
+        
+    .content-vantagens-imersao, .content-texto-imersao{
+        display: flex;
+    }
+    
+    .content-vantagens-imersao{
+        justify-content: flex-end;
+    }
+    
+    .content-texto-imersao{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .viagem{
+        // background-color:$primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$accent-color;
+        // margin-bottom: 10px;
+        border-radius: 4px;
+           
+        p{  
+            width: 300px;
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+            
         }
-        .curso_disney{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-    
-            img{
-                padding:20px;
-            }
-    
-            p{  width: 300px;
-                padding-left:0;
-                padding-top: 20px;
-                padding-right:20px;
-                }
-            }
+        img{
+            padding:20px;
         }
-        .prefeitura{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-    
-            img{
-                padding:20px;
-            }
-    
-            p{  
-                width: 300px;
-                padding-left:0;
-                padding-top: 20px;
-                padding-right:20px;
-            }
+    }
+        
+    .curso-disney{
+        // background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$accent-color;
+        // margin-bottom: 10px;
+           
+        p{
+            width: 300px;
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
         }
-        .castelo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-    
-            img{
-                padding:20px;
-            }
-    
-            p{
-                width: 300px;
-                padding-left:0;
-                padding-top: 20px;
-                padding-right:20px;
-                
-            }
+        
+        img{
+            padding:20px;
         }
-        .full-sail{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
+    }
     
-            img{
-                padding:20px;
-            }
-    
-            p{
-                width: 300px;
-                padding-left:0;
-                padding-top: 20px;
-                padding-right:20px;
-                
-            }
+    .prefeitura{
+        // background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$accent-color;
+        // margin-bottom: 10px;
+           
+        p{
+            width:300px;
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
         }
-        .nasa{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
+        
+        img{
+            padding:20px;
+        }
+    }
     
-            img{
-                padding:20px;
-            }
+    .castelo{
+        // background-color:$primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$accent-color;
+        // margin-bottom: 10px;
+           
+        p{
+            width: 300px;
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+            
+        img{
+            padding:20px;
+        }
+    }
     
-            p{
-                width: 300px;
-                padding-left:0;
-                padding-top: 20px;
-                padding-right:20px;
-                
-            }
-      } 
+    .full-sail{
+        // background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$accent-color;
+        // margin-bottom: 10px;
+           
+        p{
+            width: 300px;
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+            
+        img{
+            padding:20px;
+        }
+    }
+    
+    .nasa{
+        // background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$accent-color;
+        // margin-bottom: 10px;
+           
+        p{
+            width:300px;
+            padding-left:0;
+            padding-top: 20px;
+            padding-right:20px;
+        }
+            
+        img{
+            padding:20px;
+        }
+    }
 }
 
 
