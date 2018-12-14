@@ -605,10 +605,18 @@ h6,
     color: $light-gray;
 }
 
-form{
-    background-color: #E5C688;
-    border-radius: 4px;
+.contact-form{
+    background-color: $accent-color;
+    padding: 20px;
+
+    .primary-button{
+        background-color:$primary-color;
+        color: $accent-color;
+
+    }
 }
+
+
 
 footer{
     height: 100vh;
