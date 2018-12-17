@@ -161,6 +161,25 @@ h6,
     }
 }
 
+.splash-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon_elite{
+        width: 200px;
+        background-color: $primary-gray;
+    
+        img{
+            padding: 50px;
+        }
+    }
+
+    .primary-button{
+        margin-top: 100px;
+    }
+}
+
 .voce-elite-section {
 
     background-image: url(../img/samurai.jpg);
@@ -595,6 +614,8 @@ h6,
     .primary-button {
         margin-right: 25px;
     }
+
+
 }
 
 .faq-section {
