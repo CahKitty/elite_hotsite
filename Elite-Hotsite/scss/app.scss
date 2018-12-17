@@ -1,6 +1,6 @@
 @charset 'utf-8';
 @import 'settings';
-@import 'fullpage';
+// @import 'fullpage';
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 $primary-font: 'Lato',
 sans-serif;
@@ -205,7 +205,7 @@ h6,
     text-align: center;
     position: relative;
 
-    .content {
+    .content{
         position: initial;
     }
 
@@ -221,6 +221,8 @@ h6,
     }
 
     p {
+        position: relative;
+        z-index: 2;
         margin: auto;
         line-height: 4.5rem;
         font-size: 3.5rem;
@@ -325,84 +327,22 @@ h6,
 
 .conquistas-afiliados {
 
-    .lv-10 {
-        background-color: transparentize($primary-color, 0.16);
-        border-radius: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $accent-color;
-        margin-bottom: 10px;
-
-        p {
-            width: 300px;
-            padding-left: 0;
-            padding-top: 20px;
-            padding-right: 20px;
-        }
-
-        img {
-            padding: 20px;
-        }
-    }
-
-    .lv-50 {
-        background-color: transparentize($primary-color, 0.16);
-        border-radius: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $accent-color;
-        margin-bottom: 10px;
-
-        p {
-            width: 300px;
-            padding-left: 0;
-            padding-top: 20px;
-            padding-right: 20px;
-        }
-
-        img {
-            padding: 20px;
-        }
-    }
-
-    .lv-100 {
-        background-color: transparentize($primary-color, 0.16);
-        border-radius: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $accent-color;
-        margin-bottom: 10px;
-
-        p {
-            width: 300px;
-            padding-left: 0;
-            padding-top: 20px;
-            padding-right: 20px;
-        }
-
-        img {
-            padding: 20px;
-        }
-    }
-
+    .lv-10,
+    .lv-50,
+    .lv-100,
     .lv-500 {
         background-color: transparentize($primary-color, 0.16);
         border-radius: 4px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction:column;
         color: $accent-color;
         margin-bottom: 10px;
         border-radius: 4px;
 
         p {
+            text-align: center;
             width: 300px;
-            padding-left: 0;
-            padding-top: 20px;
-            padding-right: 20px;
+            padding: 20px;
         }
 
         img {
