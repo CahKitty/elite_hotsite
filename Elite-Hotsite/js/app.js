@@ -13,6 +13,13 @@ $(document).ready(function () {
     $.fn.fullpage.setAllowScrolling(true);
 });
 
+var windowheight = $(window).height() - 0.1;
+
+$(this).scrollTop() > windowheight ? $('.icon_elite').addClass("active") : $('.icon_elite').removeClass("active");
+$(window).scroll(function () {
+    $(this).scrollTop() > windowheight ? $('.icon_elite').addClass("active") : $('.icon_elite').removeClass("active");
+});
+
 $(window).scroll(function (event) {
     $('[data-menu-link]').each(function () {
         var el = document.getElementById($(this).prop('id'));

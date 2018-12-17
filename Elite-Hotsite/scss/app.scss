@@ -1,6 +1,6 @@
 @charset 'utf-8';
 @import 'settings';
-// @import 'fullpage';
+@import 'fullpage';
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 $primary-font: 'Lato',
 sans-serif;
@@ -83,15 +83,32 @@ h6,
     background-repeat: no-repeat;
     background-position: center;
     color: $light-gray;
+    position: relative;
+
+    &:not(.light-section):before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: block;
+        margin: auto;
+        background: #000;
+        opacity: 0.5;
+    }
 }
 
 .content {
     width: 1200px;
     max-width: 100%;
     margin: auto;
+    position: relative;
+    z-index: 2;
 
     p {
-        max-width: 500px;
+        max-width: 100%;
+        width: 500px;
         margin-bottom: 24px;
         font-size: rem-calc(16);
         line-height: rem-calc(24);
@@ -129,7 +146,7 @@ h6,
         span {
             transition: all 0.3s ease-in-out;
             opacity: 0;
-            font-size: rem-calc(18);
+            font-size: rem-calc(15);
         }
 
         &:hover,
@@ -161,22 +178,52 @@ h6,
     }
 }
 
-.splash-section{
+.icon_elite {
+    width: 140px;
+    background-color: #202020;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    padding: 32px;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+
+    &.active {
+        width: 100px;
+        padding: 16px;
+        top: 25px;
+    }
+}
+
+.splash-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    position: relative;
 
-    .icon_elite{
-        width: 200px;
-        background-color: $primary-gray;
-    
-        img{
-            padding: 50px;
-        }
+    .content {
+        position: initial;
     }
 
-    .primary-button{
-        margin-top: 100px;
+
+    .primary-button {
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        display: block;
+        max-width: 120px;
+    }
+
+    p {
+        margin: auto;
+        line-height: 4.5rem;
+        font-size: 3.5rem;
     }
 }
 
@@ -186,7 +233,7 @@ h6,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color:$primary-color;
+    color: $primary-color;
 }
 
 .exclusividade-section {
@@ -195,133 +242,43 @@ h6,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color:$light-gray;
-    
-    .content-vantagens, .content-texto{
+    color: $light-gray;
+
+    .content-vantagens,
+    .content-texto {
         display: flex;
     }
 
-    .content-vantagens{
+    .content-vantagens {
         justify-content: flex-end;
     }
 
-    .content-texto{
+    .content-texto {
         flex-direction: column;
         justify-content: center;
     }
 
-    .chat_vip{
-        background-color:$primary-color;
+    .chat_vip,
+    .evento,
+    .cursos,
+    .palestra,
+    .vitrine {
+        background-color: transparentize($primary-color, 0.4);
         display: flex;
         justify-content: center;
         align-items: center;
-        color:$accent-color;
+        color: $accent-color;
         margin-bottom: 10px;
-        border-radius: 4px;
 
-       
-        p{  width: 300px;
-            padding-left:0;
-            padding-top: 20px;
-            padding-right:20px;
-        }
-        img{
-            padding:20px;
-        }
-    }
-    
-    .chat_vip{
-        background-color: $primary-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:$accent-color;
-        margin-bottom: 10px;
-       
-        p{
+        p {
             width: 300px;
-            padding-left:0;
+            padding-left: 0;
             padding-top: 20px;
-            padding-right:20px;
+            padding-right: 20px;
         }
-        img{
-            padding:20px;
-        }
-    }
 
-    .evento{
-        background-color: $primary-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:$accent-color;
-        margin-bottom: 10px;
-       
-        p{
-            width:300px;
-            padding-left:0;
-            padding-top: 20px;
-            padding-right:20px;
-        }
-        img{
-            padding:20px;
-        }
-    }
-
-    .cursos{
-        background-color:$primary-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:$accent-color;
-        margin-bottom: 10px;
-       
-        p{
-            width: 300px;
-            padding-left:0;
-            padding-top: 20px;
-            padding-right:20px;
-        }
-        img{
-            padding:20px;
-        }
-    }
-
-    .palestra{
-        background-color: $primary-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:$accent-color;
-        margin-bottom: 10px;
-       
-        p{
-            width: 300px;
-            padding-left:0;
-            padding-top: 20px;
-            padding-right:20px;
-        }
-        img{
-            padding:20px;
-        }
-    }
-
-    .vitrine{
-        background-color: $primary-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:$accent-color;
-        margin-bottom: 10px;
-       
-        p{
-            width:300px;
-            padding-left:0;
-            padding-top: 20px;
-            padding-right:20px;
-        }
-        img{
-            padding:20px;
+        img {
+            padding: 20px;
         }
     }
 }
@@ -337,123 +294,130 @@ h6,
 
 }
 
-.programa-section{
+.programa-section {
     background-image: url(../img/katana_faq.jpg);
 }
 
-.niveis-section{
+.niveis-section {
 
-    .niveis-texto, .niveis-frase{
+    .niveis-texto,
+    .niveis-frase {
         display: flex;
     }
-    
-    .niveis-texto{
+
+    .niveis-texto {
         flex-direction: column;
         justify-content: center;
     }
-    
-    .niveis-frases{
+
+    .niveis-frases {
         justify-content: flex-end;
     }
-    
-    h3{
+
+    h3 {
         color: $accent-color;
         font-style: italic;
     }
 
 }
 
-.niveis-afiliados-section{
-    
+.niveis-afiliados-section {}
+
+.conquistas-afiliados {
+
+    .lv-10 {
+        background-color: transparentize($primary-color, 0.16);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $accent-color;
+        margin-bottom: 10px;
+
+        p {
+            width: 300px;
+            padding-left: 0;
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+
+        img {
+            padding: 20px;
+        }
+    }
+
+    .lv-50 {
+        background-color: transparentize($primary-color, 0.16);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $accent-color;
+        margin-bottom: 10px;
+
+        p {
+            width: 300px;
+            padding-left: 0;
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+
+        img {
+            padding: 20px;
+        }
+    }
+
+    .lv-100 {
+        background-color: transparentize($primary-color, 0.16);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $accent-color;
+        margin-bottom: 10px;
+
+        p {
+            width: 300px;
+            padding-left: 0;
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+
+        img {
+            padding: 20px;
+        }
+    }
+
+    .lv-500 {
+        background-color: transparentize($primary-color, 0.16);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $accent-color;
+        margin-bottom: 10px;
+        border-radius: 4px;
+
+        p {
+            width: 300px;
+            padding-left: 0;
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+
+        img {
+            padding: 20px;
+        }
+    }
+
 }
 
-.conquistas-afiliados{
-    
-    .lv-10{
-        background-color:transparentize($primary-color, 0.16);
-        border-radius:4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:$accent-color;
-        margin-bottom: 10px;
-
-        p{
-            width:300px;
-            padding-left:0;
-            padding-top: 20px;
-            padding-right:20px;
-        }
-        img{
-            padding:20px;
-        }
-    }
-    .lv-50{
-        background-color:transparentize($primary-color, 0.16);
-        border-radius:4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:$accent-color;
-        margin-bottom: 10px;
-
-        p{
-            width:300px;
-            padding-left:0;
-            padding-top: 20px;
-            padding-right:20px;
-        }
-        img{
-            padding:20px;
-        }
-    }
-    .lv-100{
-        background-color:transparentize($primary-color, 0.16);
-        border-radius:4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:$accent-color;
-        margin-bottom: 10px;
-
-        p{
-            width:300px;
-            padding-left:0;
-            padding-top: 20px;
-            padding-right:20px;
-        }
-        img{
-            padding:20px;
-        }
-    }
-    .lv-500{
-        background-color:transparentize($primary-color, 0.16);
-        border-radius:4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:$accent-color;
-        margin-bottom: 10px;
-        border-radius:4px;
-
-        p{
-            width:300px;
-            padding-left:0;
-            padding-top: 20px;
-            padding-right:20px;
-        }
-        img{
-            padding:20px;
-        }
-    }
-
-}
 
 
 
 
-
-.imersao-section, .vantagens.imersao{
+.imersao-section,
+.vantagens.imersao {
     display: flex;
 }
 
@@ -463,139 +427,141 @@ h6,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color:$light-gray;
-        
-    .content-vantagens-imersao, .content-texto-imersao{
+    color: $light-gray;
+
+    .content-vantagens-imersao,
+    .content-texto-imersao {
         display: flex;
     }
-    
-    .content-vantagens-imersao{
+
+    .content-vantagens-imersao {
         justify-content: flex-end;
     }
-    
-    .content-texto-imersao{
+
+    .content-texto-imersao {
         flex-direction: column;
         justify-content: center;
     }
-    
-    .viagem{
+
+    .viagem {
         // background-color:$primary-color;
         display: flex;
         justify-content: center;
         align-items: center;
-        color:$accent-color;
+        color: $accent-color;
         // margin-bottom: 10px;
         border-radius: 4px;
-           
-        p{  
+
+        p {
             width: 300px;
-            padding-left:0;
+            padding-left: 0;
             padding-top: 20px;
-            padding-right:20px;
-            
+            padding-right: 20px;
+
         }
-        img{
-            padding:20px;
+
+        img {
+            padding: 20px;
         }
     }
-        
-    .curso-disney{
+
+    .curso-disney {
         // background-color: $primary-color;
         display: flex;
         justify-content: center;
         align-items: center;
-        color:$accent-color;
+        color: $accent-color;
         // margin-bottom: 10px;
-           
-        p{
+
+        p {
             width: 300px;
-            padding-left:0;
+            padding-left: 0;
             padding-top: 20px;
-            padding-right:20px;
+            padding-right: 20px;
         }
-        
-        img{
-            padding:20px;
+
+        img {
+            padding: 20px;
         }
     }
-    
-    .prefeitura{
+
+    .prefeitura {
         // background-color: $primary-color;
         display: flex;
         justify-content: center;
         align-items: center;
-        color:$accent-color;
+        color: $accent-color;
         // margin-bottom: 10px;
-           
-        p{
-            width:300px;
-            padding-left:0;
+
+        p {
+            width: 300px;
+            padding-left: 0;
             padding-top: 20px;
-            padding-right:20px;
+            padding-right: 20px;
         }
-        
-        img{
-            padding:20px;
+
+        img {
+            padding: 20px;
         }
     }
-    
-    .castelo{
+
+    .castelo {
         // background-color:$primary-color;
         display: flex;
         justify-content: center;
         align-items: center;
-        color:$accent-color;
+        color: $accent-color;
         // margin-bottom: 10px;
-           
-        p{
+
+        p {
             width: 300px;
-            padding-left:0;
+            padding-left: 0;
             padding-top: 20px;
-            padding-right:20px;
+            padding-right: 20px;
         }
-            
-        img{
-            padding:20px;
+
+        img {
+            padding: 20px;
         }
     }
-    
-    .full-sail{
+
+    .full-sail {
         // background-color: $primary-color;
         display: flex;
         justify-content: center;
         align-items: center;
-        color:$accent-color;
+        color: $accent-color;
         // margin-bottom: 10px;
-           
-        p{
+
+        p {
             width: 300px;
-            padding-left:0;
+            padding-left: 0;
             padding-top: 20px;
-            padding-right:20px;
+            padding-right: 20px;
         }
-            
-        img{
-            padding:20px;
+
+        img {
+            padding: 20px;
         }
     }
-    
-    .nasa{
+
+    .nasa {
         // background-color: $primary-color;
         display: flex;
         justify-content: center;
         align-items: center;
-        color:$accent-color;
+        color: $accent-color;
         // margin-bottom: 10px;
-           
-        p{
-            width:300px;
-            padding-left:0;
+
+        p {
+            width: 300px;
+            padding-left: 0;
             padding-top: 20px;
-            padding-right:20px;
+            padding-right: 20px;
         }
-            
-        img{
-            padding:20px;
+
+        img {
+            padding: 20px;
         }
     }
 }
@@ -626,84 +592,81 @@ h6,
     color: $light-gray;
 }
 
-.contact-form{
+.contact-form {
     background-color: $accent-color;
     padding: 20px;
 
-    .primary-button{
-        background-color:$primary-color;
+    .primary-button {
+        background-color: $primary-color;
         color: $accent-color;
     }
 }
 
 
-footer{
+footer {
     height: 100vh;
     background-color: $primary-color;
-   
 
-    .logo-eduzz{
+
+    .logo-eduzz {
         padding: 30px;
         // background-color: #E5C688;
     }
 
-    p{  
+    p {
         padding: 10px;
-        color: $light-gray;}
+        color: $light-gray;
+    }
 
-    .links-eduzz{
+    .links-eduzz {
         padding: 30px;
         color: $light-gray;
         // background-color: rgb(229, 136, 221);
 
 
-        ul{
-            list-style-type:none;
+        ul {
+            list-style-type: none;
         }
 
-        li{
+        li {
             margin-left: -17px;
         }
     }
 
-    .links-blog{
+    .links-blog {
         color: $light-gray;
         padding: 30px;
         // background-color: greenyellow;
-        
-        ul{
-            list-style-type:none;
+
+        ul {
+            list-style-type: none;
         }
 
-        li{
+        li {
             margin-left: -17px;
         }
 
     }
 
-    .redes-sociais{
+    .redes-sociais {
         padding-top: 30px;
         // background-color: rgb(61, 47, 255);
 
-        img{
+        img {
             margin-right: 8px;
         }
-        
+
     }
 
-    .copy{
+    .copy {
         margin: 0 auto;
         padding: 5px;
         font-size: 8px;
         // background-color: peru;
     }
-    
-    .accordion-item{
+
+    .accordion-item {
         background-color: #E5C688;
         margin-bottom: 20px;
     }
 }
-
-
-
-
