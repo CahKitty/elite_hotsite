@@ -533,14 +533,44 @@ h6,
 }
 
 .contact-form {
+
     background-color: $accent-color;
     padding: 20px;
+
+
+    h3{
+        color: $primary-color;
+        text-align: center;
+    }
+   
 
     .primary-button {
         background-color: $primary-color;
         color: $accent-color;
+        margin: auto;
     }
 }
+
+.accordion{
+    background-color: transparent;
+   
+    .accordion-item {
+        background-color: #000;
+        margin-bottom: 20px;
+
+        &:hover{
+            background-color: #000;
+            color: #E5C688;
+        }
+    }
+
+
+    .accordion-title{
+        color: #cecece;
+    }
+     
+}
+
 
 
 footer {
@@ -605,8 +635,5 @@ footer {
         // background-color: peru;
     }
 
-    .accordion-item {
-        background-color: #E5C688;
-        margin-bottom: 20px;
-    }
+    
 }
