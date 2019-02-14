@@ -47,6 +47,10 @@ $(window).ready(function (event) {
 
 $(document).ready(function () {
     $(function () {
+        $('#show-video').click(function () {
+            $('#video-container').removeClass('hide');
+        });
+
         $('a[href*="#"]:not([href="#"])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 var target = $(this.hash);
