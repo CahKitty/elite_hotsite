@@ -555,12 +555,16 @@ h6,
     background-color: transparent;
    
     .accordion-item {
-        background-color: #000;
-        margin-bottom: 20px;
-
-        &:hover{
+        .accordion-title{
             background-color: #000;
-            color: #E5C688;
+            margin-bottom: 20px;
+            border:0;
+            font-size:16px;
+            
+            &:hover{
+                background-color: #000;
+                color: #E5C688;
+            }
         }
     }
 
